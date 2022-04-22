@@ -1,1 +1,1 @@
-# Techie
+# Tech Enthusiast
