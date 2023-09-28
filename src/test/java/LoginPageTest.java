@@ -19,10 +19,11 @@ public class LoginPageTest extends Base {
         loginTest = new LoginPage();
     }
 
+    @Test(priority = 1)
     public void loginPageTitleTest() {
-
+        loginTest.loginPageTitle();
     }
-    @Test
+    @Test(priority = 2)
     public void loginPageTest(){
         loginTest.loginPage(properties.getProperty("email"), properties.getProperty("password") );
 

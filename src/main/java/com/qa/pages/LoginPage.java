@@ -19,6 +19,10 @@ public class LoginPage {
         PageFactory.initElements(driver,this);
     }
 
+    public String loginPageTitle(){
+        return driver.getTitle();
+    }
+
     public CustomerPage loginPage(String mail, String pwd){
         email.sendKeys(mail);
         password.sendKeys(pwd);
