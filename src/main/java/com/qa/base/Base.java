@@ -27,7 +27,6 @@ public class Base {
         */
 
         String browserName = properties.getProperty("browser");
-        System.out.println(browserName);
         if(browserName.equals("firefox")){
             System.setProperty("webdriver.gecko.driver", "E:\\mySoftware\\Drivers\\geckodriver.exe");
             driver = new FirefoxDriver();
@@ -35,8 +34,8 @@ public class Base {
 
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
-
         driver.get(properties.getProperty("url"));
+
         /*WebElement element = driver.findElement(By.id("APjFqb"));
         element.sendKeys("Mulberri inc");
         element.sendKeys(Keys.ENTER);*/
