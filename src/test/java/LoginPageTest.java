@@ -22,6 +22,7 @@ public class LoginPageTest extends Base {
     @Test(priority = 1)
     public void loginPageTitleTest() {
         loginTest.loginPageTitle();
+
     }
     @Test(priority = 2)
     public void loginPageTest(){
