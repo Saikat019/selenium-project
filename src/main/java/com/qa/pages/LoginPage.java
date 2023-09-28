@@ -18,14 +18,16 @@ public class LoginPage {
     public LoginPage(){
         PageFactory.initElements(driver,this);
     }
-
     public String loginPageTitle(){
         return driver.getTitle();
     }
-
-    public CustomerPage loginPage(String mail, String pwd){
+    public void setEmail(String mail){
         email.sendKeys(mail);
+    }
+    public void setPassword(String pwd){
         password.sendKeys(pwd);
+    }
+    public CustomerPage clickLogin(){
         loginBtn.click();
         return new CustomerPage();
     }
